@@ -3,44 +3,54 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Student Form</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
     
+
+
     <div class="row">
-      <div class="large-12 columns">
-        
-        <form action="">
-
-          <label>Name
-            <input type="text" placeholder="Enter Your Name Here">
-          </label>
-
-          <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Green" id="pokemonGreen"><label for="pokemonGreen">GREEN</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">BLUE</label>
-
-            <div class="row collapse">
-              <div class="small-3 large-2 columns">
-                  <span class="prefix">http://</span>
-              </div>
-              
-              <div class="small-9 large-10 columns">
-                  <input type="text" placeholder="Enter your URL...">
-              </div>
-            </div>    
+      <div class="columns large-6">
           
+       <form action="" data-abide="" novalidate="novalidate" class="error">
+         
+          <label for="name">Name</label>
+              <label>
+                  <input type="text" name="name" placeholder="Enter Your Name Here" required data-invalid>
+                      <small class="error">Required</small>
+              </label> 
+
+
+          <label for>Student ID Number</label>
+              <label>
+                  <input type="text" placeholder="123" required data-invalid>
+                      <small class="error">Required</small>
+              </label> 
+
+
+            <label for="major">Major</label>
+            <input type="text" name="major" placeholder="Enter Your Major Here">
+              
+            <label for="email" />Email</label>
+            <input type="email" name="email" placeholder="you@me.com" />
+
+            <label for="date" />Graduation Date</label>
+            <input type="text" name="date" placeholder="MM/DD/YEAR" />
+
+
+          <div class="row collapse">
+            
+
+          </div>  
 
           <input type="submit">
 
-        <form>
-
-        
+       </form> 
+          
       </div>
     </div>
-    
    
 
 
